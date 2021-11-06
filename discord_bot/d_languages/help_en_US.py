@@ -1,5 +1,5 @@
 import importlib.util
-spec = importlib.util.spec_from_file_location("botconfig", "D:/projects/visionone-discord/discord_bot/discord_botconfig.py")
+spec = importlib.util.spec_from_file_location("botconfig", "./discord_bot/discord_botconfig.py")
 botconfig = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(botconfig)
 
