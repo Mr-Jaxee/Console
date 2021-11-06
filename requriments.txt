@@ -1,0 +1,12 @@
+discord
+numexpr
+flask
+python-dotenv
+python-unsplash
+py-cpuinfo
+psutil
+youtube-search
+youtube-dl
+pafy
+praw
+discord_components
