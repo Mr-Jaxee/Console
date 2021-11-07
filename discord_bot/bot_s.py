@@ -11,7 +11,7 @@ from .discord_botconfig import botconfig
 @bot.event
 async def on_ready():
     keep_alive.keep_alive()
-    print('\nWelcome! Vision ver. ' + botconfig['version'] + '\n(©) 2021-2021 Jaxee. All rights reserved.')
+    print('\nWelcome! Console ver. ' + botconfig['version'] + '\n(©) 2021-2021 Jaxee. All rights reserved.')
     print('\nConnected - ' + bot.user.name + '#' + bot.user.discriminator + '\nLatency: ' + str(round(bot.latency * 1000, 2)) + ' ms | Guilds: ' + str(len(bot.guilds)))
     print('----------------------------------------------------------------------')
     boticord_token = os.environ['BOTICORDTOKEN']
