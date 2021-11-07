@@ -69,8 +69,8 @@ except:
 try:
 	reddit = praw.Reddit(client_id=os.environ['REDDITID'],
 					 client_secret=os.environ['REDDITST'],
-					 user_agent='Vision Bot',
-					 username='dmitcomputers')
+					 user_agent='Console',
+					 username='Jaxee')
 except:
 	reddit = None
 
@@ -97,7 +97,7 @@ def create_connection(path):
 
 	return connection
 
-connection = create_connection(os.path.join(os.path.dirname(__file__), 'vision_discord.sqlite'))
+connection = create_connection(os.path.join(os.path.dirname(__file__), 'console_discord.sqlite'))
 cursor = connection.cursor()
 cursor.execute("""CREATE TABLE IF NOT EXISTS users(
 		userid TEXT NOT NULL PRIMARY KEY,
