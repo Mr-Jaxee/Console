@@ -2,6 +2,7 @@ import random
 
 async def photo_cmd(bot, discord, message, botconfig, os, platform, datetime, one_result, localization, unix_time_millis, unsplash, time_diff, bot_data_result, cursor, connection, embed_color, reddit, prefix):
   args = message.content.split();
+  print(args)
   try:
     if " ".join(args[1:]) == "" or " ".join(args[1:]) == " " or " ".join(args[1:]) == None:
       if reddit != None and unsplash != None:

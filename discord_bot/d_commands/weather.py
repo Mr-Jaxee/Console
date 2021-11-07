@@ -1,12 +1,13 @@
 async def weather_cmd(bot, discord, sqlite3, message, botconfig, os, platform, datetime, one_result, localization, embed_color, requests):
-  args = message.content.split();
+  args1 = message.content.split('=weather');
+  args = [x.replace(' ', '') for x in args1]
   city_id = 0
   no_args = discord.Embed(title=localization[1][13][0], description=localization[1][11][14], color=embed_color)
   if " ".join(args[1:]) == "" or " ".join(args[1:]) == " " or " ".join(args[1:]) == None:
     return await message.channel.send(embed=no_args)
   try:
     res = requests.get("http://api.openweathermap.org/data/2.5/find",
-                 params={'q': " ".join(args[1:]), 'type': 'like', 'units': 'metric', 'APPID': os.environ['OPENWMAPT']})
+                 params={'q': " ".join(args[1:]), 'type': 'like', 'units': 'metric', 'APPID': '03c08d28d111a968d15571e4da22a1d3'})
     data = res.json()
     city_id = data['list'][0]['id']
   except Exception as e:
@@ -14,9 +15,9 @@ async def weather_cmd(bot, discord, sqlite3, message, botconfig, os, platform, d
     return await message.channel.send(embed=weather_content)
   try:
     res = requests.get("http://api.openweathermap.org/data/2.5/weather",
-                 params={'id': city_id, 'units': 'metric', 'lang': localization[1][11][10], 'APPID': os.environ['OPENWMAPT']})
+                 params={'id': city_id, 'units': 'metric', 'lang': localization[1][11][10], 'APPID': '03c08d28d111a968d15571e4da22a1d3'})
     res2 = requests.get("http://api.openweathermap.org/data/2.5/forecast",
-                           params={'id': city_id, 'units': 'metric', 'lang': localization[1][11][10], 'cnt': '5', 'APPID': os.environ['OPENWMAPT']})
+                           params={'id': city_id, 'units': 'metric', 'lang': localization[1][11][10], 'cnt': '5', 'APPID': '03c08d28d111a968d15571e4da22a1d3'})
     data = res.json()
     forecast_five_days_json = res2.json()
     forecast_str = ""
