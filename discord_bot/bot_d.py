@@ -69,8 +69,8 @@ except:
 try:
 	reddit = praw.Reddit(client_id=os.environ['REDDITID'],
 					 client_secret=os.environ['REDDITST'],
-					 user_agent='Vision Bot',
-					 username='dmitcomputers')
+					 user_agent='Console',
+					 username='Jaxee')
 except:
 	reddit = None
 

@@ -30,6 +30,6 @@ async def state_cmd(bot, discord, sqlite3, message, botconfig, os, platform, dat
         state_content.add_field(name=str(localization[1][1][13]), value=ram_available + " / " + ram_total, inline=True)
         state_content.add_field(name=str(localization[1][1][5]), value=platform.python_version(), inline=True)
         state_content.add_field(name=str(localization[1][1][6]), value=platform.python_build()[1], inline=True)
-        state_content.add_field(name=str(localization[1][1][7]), value="**discord.py:** " + discord.__version__ + "\n**SQLite3 library:** " + sqlite3.sqlite_version + "\n**Vision bot:** " + botconfig['version'], inline=True)
+        state_content.add_field(name=str(localization[1][1][7]), value="**discord.py:** " + discord.__version__ + "\n**SQLite3 library:** " + sqlite3.sqlite_version + "\n**Console:** " + botconfig['version'], inline=True)
         state_content.add_field(name=str(localization[1][1][8]), value="🏠 " + str(len(bot.guilds)) + " | 👥 " + str(len(bot.users)) + " | 🗃 " + str(len(usersdb_count) + len(guildsdb_count)), inline=True)
         await message.channel.send(embed=state_content)
