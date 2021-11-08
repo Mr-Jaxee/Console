@@ -298,13 +298,13 @@ def get():
             ],
             [ # 1.15
               'About the bot', # 1.15.0
-              '{0} is a simple and extensible bot from Jaxee. This bot is a replacement for the Effective bot, which was crude enough to run for monitoring bots. But don`t worry, the Console bot has (albeit imperfect) integration with the SQlite3 database, when the Effective bot had only primitive JSON. The bot was written from scratch and took into account the mistakes made during the development of the Effective bot. Now it develops not only thanks to you, but also to the author (Jaxee  `y) with its productivity.\nHe can find out the weather in your city, encrypt or decrypt texts, show random and rather interesting photos from Reddit and Unsplash, play \n "Ball of Fate \n" etc. \n \n_Bot Console and its open source code are distributed under the terms of the MIT License'.format (name), # 1.15.1
+              '{0} is a simple and extensible bot from Jaxee. This bot is a replacement for the Effective bot bot, which was crude enough to run for monitoring bots. But don\'t worry, the Vision bot has (albeit imperfect) integration with the SQlite3 database, when there was only primitive JSON in Effective bot. The bot was written from scratch and took into account the mistakes made during the development of the Effective bot bot. It develops not only thanks to you, but also to the author (Jaxee) with its productivity. He can ask you the weather, encrypt or decrypt texts, show random and rather interesting photos from Reddit and Unsplash, play Crystal Ball, etc.'.format(name), # 1.15.1
               'Written in', # 1.15.2
               'Author', # 1.15.3
               'Bot Monitoring', # 1.15.4
-              '[bots.server-discord.com] (https://bots.server-discord.com/785383439196487720) \n [BotiCord] (https://boticord.top/bot/901352871071715408) \n [discord.bots. gg] (https://discord.bots.gg/bots/901352871071715408) ', # 1.15.5
+              '[bots.server-discord.com](https://bots.server-discord.com/785383439196487720) \n [BotiCord](https://boticord.top/bot/901352871071715408) \n [discord.bots.gg](https://discord.bots.gg/bots/901352871071715408) ', # 1.15.5
               'Links', # 1.15.6
-              '[Invite bot] (https://discord.com/api/oauth2/authorize?client_id=901352871071715408&permissions=8&scope=bot) \n [GitHub] (https://github.com/Mr-Jaxee/Console) \n [VK] (https://vk.com/jaxee_community) \n [YouTube] (https://www.youtube.com/channel/UCN4WMA-kU57j6xeKF5tTwCA) \n [Developer server] (https://discord.gg / QbQ8qs4jDz) '# 1.15.7
+              '[Invite bot](https://discord.com/api/oauth2/authorize?client_id=901352871071715408&permissions=8&scope=bot) \n [GitHub](https://github.com/Mr-Jaxee/Console) \n [VK](https://vk.com/jaxee_community) \n [YouTube](https://www.youtube.com/channel/UCN4WMA-kU57j6xeKF5tTwCA) \n [Developer server](https://discord.gg/QbQ8qs4jDz) '# 1.15.7
             ],
             [ # 1.16
               'Polling', # 1.16.0
