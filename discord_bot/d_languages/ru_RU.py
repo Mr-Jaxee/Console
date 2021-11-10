@@ -310,7 +310,7 @@ def get():
               'Мониторинги ботов', # 1.15.4
               '[bots.server-discord.com](https://bots.server-discord.com/785383439196487720)\n[BotiCord](https://boticord.top/bot/901352871071715408)\n[discord.bots.gg](https://discord.bots.gg/bots/901352871071715408)', # 1.15.5
               'Ссылки', # 1.15.6
-              '[Пригласить бота](https://discord.com/api/oauth2/authorize?client_id=901352871071715408&permissions=8&scope=bot)\n[GitHub](https://github.com/Mr-Jaxee/Console)\n[ВКонтакте](https://vk.com/jaxee_community)\n[YouTube](https://www.youtube.com/channel/UCN4WMA-kU57j6xeKF5tTwCA)\n[Сервер разработчика](https://discord.gg/QbQ8qs4jDz)' # 1.15.7
+              '[Пригласить бота](https://discord.com/api/oauth2/authorize?client_id=901352871071715408&permissions=8&scope=8)\n[GitHub](https://github.com/Mr-Jaxee/Console)\n[ВКонтакте](https://vk.com/jaxee_community)\n[YouTube](https://www.youtube.com/channel/UCN4WMA-kU57j6xeKF5tTwCA)\n[Сервер разработчика](https://discord.gg/QbQ8qs4jDz)' # 1.15.7
             ],
             [ # 1.16
               'Голосование', # 1.16.0
